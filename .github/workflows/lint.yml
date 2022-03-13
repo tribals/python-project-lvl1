@@ -28,9 +28,9 @@ jobs:
       - uses: PromyLOPh/guix-install-action@v1.2.2
         name: Install GNU Guix
 
-      - run: guix shell -m manifest.scm make install
+      - run: guix shell -m manifest.scm -- make install
         name: Install project dependencies (including dev ones)
 
       # Runs a set of commands using the runners shell
       - name: Lint
-        run: guix shell -m manifest.scm make lint
+        run: guix shell -m manifest.scm -- make lint
