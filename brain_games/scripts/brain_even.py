@@ -37,7 +37,7 @@ def meet_user():
 
 
 def prompt_name():
-    return prompt.string(f'{_MESSAGE_PROMPT_NAME}')
+    return prompt.string(_MESSAGE_PROMPT_NAME)
 
 
 def game(user):
