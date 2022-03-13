@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.0.1"
+version = "0.0.2"
 description = "Solution of HexLet's first project in \"Python Profession\""
 authors = ["Anton Siluev <burning2007@ya.ru>"]
 license = "MIT"
@@ -17,6 +17,7 @@ flake8 = "^4.0.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

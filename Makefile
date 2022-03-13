@@ -8,7 +8,12 @@ brain-games:
 
 .PHONY: brain-games
 
-dist/hexlet_code-*-py3-none-any.whl:
+brain-even:
+	poetry run brain-even
+
+.PHONY: brain-even
+
+dist/hexlet_code-*-py3-none-any.whl: brain_games/**/*.py
 	poetry build --format wheel
 
 build: dist/hexlet_code-*-py3-none-any.whl
@@ -29,4 +34,4 @@ publish:
 .PHONY: publish
 
 package-install: build
-	python3 -m pip install --user dist/hexlet_code-*-py3-none-any.whl
+	python3 -m pip install --force-reinstall --user dist/hexlet_code-*-py3-none-any.whl
