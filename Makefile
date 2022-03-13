@@ -13,6 +13,11 @@ dist/hexlet_code-*-py3-none-any.whl:
 
 build: dist/hexlet_code-*-py3-none-any.whl
 
+lint:
+	poetry run flake8 brain_games
+
+.PHONY: lint
+
 clean:
 	rm -r dist/
 
