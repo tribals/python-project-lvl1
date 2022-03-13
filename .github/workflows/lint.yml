@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI on remote repo
 
 # Controls when the workflow will run
 on:
@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  lint:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -25,10 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Install
-        run: make install
+      - uses: PromyLOPh/guix-install-action@v1.2.2
+        name: Install GNU Guix
+
+      - run: guix shell -m manifest.scm make install
+        name: Install project dependencies (including dev ones)
 
       # Runs a set of commands using the runners shell
       - name: Lint
-        run: make lint
+        run: guix shell -m manifest.scm make lint
