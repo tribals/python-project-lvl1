@@ -4,11 +4,11 @@ import prompt
 
 
 _MESSAGE_WELCOME = 'Welcome to the Brain Games!'
-_MESSAGE_PROMPT_NAME = 'May I have your name? '  # NOTE: trailing space is mandatory
+_MESSAGE_PROMPT_NAME = 'May I have your name? '  # NOTE: mandatory trailing space
 _MESSAGE_HELLO = 'Hello,'
 _MESSAGE_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 _MESSAGE_QUESTION_NUMBER = 'Question:'
-_MESSAGE_PROMPT_ANSWER = 'Your answer: '  # NOTE: trailing space is mandatory
+_MESSAGE_PROMPT_ANSWER = 'Your answer: '  # NOTE: mandatory trailing space
 _MESSAGE_WIN_TURN = 'Correct!'
 _MESSAGE_LOSE = "is wrong answer ;(. Correct answer was"
 _MESSAGE_TRY_AGAIN = "Let's try again,"
