@@ -2,10 +2,9 @@ from random import randint
 
 import prompt
 
+from brain_games.cli import display_welcome, meet_user
 
-_MESSAGE_WELCOME = 'Welcome to the Brain Games!'
-_MESSAGE_PROMPT_NAME = 'May I have your name? '  # NOTE: mandatory trailing space
-_MESSAGE_HELLO = 'Hello,'
+
 _MESSAGE_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 _MESSAGE_QUESTION_NUMBER = 'Question:'
 _MESSAGE_PROMPT_ANSWER = 'Your answer: '  # NOTE: mandatory trailing space
@@ -27,17 +26,6 @@ def main():
     user = meet_user()
 
     game(user)
-
-
-def meet_user():
-    name = prompt_name()
-    display_hello(name)
-
-    return name
-
-
-def prompt_name():
-    return prompt.string(_MESSAGE_PROMPT_NAME)
 
 
 def game(user):
@@ -91,14 +79,6 @@ def question_number():
 
 def prompt_answer():
     return prompt.string(_MESSAGE_PROMPT_ANSWER)
-
-
-def display_welcome():
-    print(_MESSAGE_WELCOME)
-
-
-def display_hello(user):
-    print(f'{_MESSAGE_HELLO} {user}!')
 
 
 def display_rules():
