@@ -28,8 +28,8 @@ def game(rules, game_question, game_correct_answer, user):
 
 
 def _turn(game_question, game_correct_answer, user):
-    question = game_question()
-    _display_question(question)
+    (question, text_question) = game_question()
+    _display_question(text_question)
 
     answer = _prompt_answer()
     correct_answer = game_correct_answer(question)
@@ -48,8 +48,8 @@ def _display_rules(rules):
     print(rules)
 
 
-def _display_question(question):
-    print(f'{_MESSAGE_QUESTION} {question}')
+def _display_question(text_question):
+    print(f'{_MESSAGE_QUESTION} {text_question}')
 
 
 def _prompt_answer():

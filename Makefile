@@ -10,6 +10,10 @@ brain-games:
 brain-even:
 	poetry run brain-even
 
+.PHONY: brain-calc
+brain-calc:
+	poetry run brain-calc
+
 dist/hexlet_code-*-py3-none-any.whl: brain_games/**/*.py
 	poetry build --format wheel
 
