@@ -11,3 +11,7 @@
 # Brain Calc
 
 [![asciicast](https://asciinema.org/a/rM6LG5qtXla2Ik4NvnZxBBWPM.svg)](https://asciinema.org/a/rM6LG5qtXla2Ik4NvnZxBBWPM)
+
+# Brain Greatest Common Divisor
+
+[![asciicast](https://asciinema.org/a/1JIKXYMx5IWUsVX82aB9duUfi.svg)](https://asciinema.org/a/1JIKXYMx5IWUsVX82aB9duUfi)

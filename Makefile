@@ -14,6 +14,10 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
+.PHONY: brain-gcd
+brain-gcd:
+	poetry run brain-gcd
+
 dist/hexlet_code-*-py3-none-any.whl: brain_games/**/*.py
 	poetry build --format wheel
 
