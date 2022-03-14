@@ -18,6 +18,10 @@ brain-calc:
 brain-gcd:
 	poetry run brain-gcd
 
+.PHONY: brain-progression
+brain-progression:
+	poetry run brain-progression
+
 dist/hexlet_code-*-py3-none-any.whl: brain_games/**/*.py
 	poetry build --format wheel
 
