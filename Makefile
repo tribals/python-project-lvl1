@@ -22,6 +22,10 @@ brain-gcd:
 brain-progression:
 	poetry run brain-progression
 
+.PHONY: brain-prime
+brain-prime:
+	poetry run brain-prime
+
 dist/hexlet_code-*-py3-none-any.whl: brain_games/**/*.py
 	poetry build --format wheel
 
