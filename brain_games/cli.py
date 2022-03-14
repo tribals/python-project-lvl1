@@ -3,7 +3,7 @@ import prompt
 from brain_games.game import game
 
 _MESSAGE_WELCOME = 'Welcome to the Brain Games!'
-_MESSAGE_PROMPT_NAME = 'May I have your name? '  # NOTE: mandatory trailing space
+_MESSAGE_PROMPT_NAME = 'May I have your name?'
 _MESSAGE_HELLO = 'Hello,'
 
 
@@ -27,7 +27,7 @@ def meet_user():
 
 
 def _prompt_name():
-    return prompt.string(_MESSAGE_PROMPT_NAME)
+    return prompt.string(f'{_MESSAGE_PROMPT_NAME} ')
 
 
 def _display_hello(user):
