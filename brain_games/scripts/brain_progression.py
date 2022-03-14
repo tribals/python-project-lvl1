@@ -4,3 +4,7 @@ from brain_games.games.progression import RULES, question_progression, correct_a
 
 def main():
     base_main(RULES, question_progression, correct_answer)
+
+
+if __name__ == '__main__':
+    main()

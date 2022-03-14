@@ -4,8 +4,16 @@ version = "0.0.2"
 description = "Solution of HexLet's first project in \"Python Profession\""
 authors = ["Anton Siluev <burning2007@ya.ru>"]
 license = "MIT"
+repository = "https://github.com/tribals/python-project-lvl1"
 packages = [
   { include = "brain_games" },
+]
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Topic :: Education",
+  "Topic :: Games/Entertainment :: Puzzle Games",
 ]
 
 [tool.poetry.dependencies]

@@ -4,3 +4,7 @@ from brain_games.games.gcd import RULES, question_gcd, correct_answer
 
 def main():
     base_main(RULES, question_gcd, correct_answer)
+
+
+if __name__ == '__main__':
+    main()
