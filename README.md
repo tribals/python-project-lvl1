@@ -12,7 +12,7 @@ You need to [install `poetry`](https://python-poetry.org/docs/#installing-with-p
 ## Setup
 
 1. clone repository
-1. 'make install'
+1. `make install`
 
 To install it as Python package, run:
 
