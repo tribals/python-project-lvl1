@@ -15,7 +15,8 @@ def game_progression(user):
 
 
 def question_progression():
-    progression = _random_progression()
+    (start, step) = _random_start_step()
+    progression = _random_progression(start, step)
     missing_element_index = _missing_element(progression)
 
     text_question = _hide_missing_element(progression, missing_element_index)
@@ -23,10 +24,14 @@ def question_progression():
     return ((progression, missing_element_index), text_question)
 
 
-def _random_progression():
+def _random_start_step():
     start = random.randint(0, _PROGRESSION_MAX_START)
     step = random.randint(1, _PROGRESSION_MAX_INCREMENT)
 
+    return (start, step)
+
+
+def _random_progression(start, step):
     result = ()
     i = 0
 
