@@ -1,9 +1,9 @@
 from brain_games.cli import base_main
-from brain_games.games.even import RULES, question_number, correct_answer
+from brain_games.games.even import game_even
 
 
 def main():
-    base_main(RULES, question_number, correct_answer)
+    base_main(game_even)
 
 
 if __name__ == '__main__':

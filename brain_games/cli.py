@@ -1,18 +1,16 @@
 import prompt
 
-from brain_games.game import game
-
 _MESSAGE_WELCOME = 'Welcome to the Brain Games!'
 _MESSAGE_PROMPT_NAME = 'May I have your name?'
 _MESSAGE_HELLO = 'Hello,'
 
 
-def base_main(rules, game_question, game_correct_answer):
+def base_main(game):
     display_welcome()
 
     user = meet_user()
 
-    game(rules, game_question, game_correct_answer, user)
+    game(user)
 
 
 def display_welcome():

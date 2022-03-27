@@ -1,9 +1,9 @@
 from brain_games.cli import base_main
-from brain_games.games.gcd import RULES, question_gcd, correct_answer
+from brain_games.games.gcd import game_gcd
 
 
 def main():
-    base_main(RULES, question_gcd, correct_answer)
+    base_main(game_gcd)
 
 
 if __name__ == '__main__':

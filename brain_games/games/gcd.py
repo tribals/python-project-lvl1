@@ -1,10 +1,16 @@
 import random
 import math
 
+from brain_games.game import game
 
-RULES = 'Find the greatest common divisor of given numbers.'
+
+_RULES = 'Find the greatest common divisor of given numbers.'
 
 _MAX_QUESTION_NUMBER = 99
+
+
+def game_gcd(user):
+    game(_RULES, question_gcd, correct_answer, user)
 
 
 def question_gcd():

@@ -1,11 +1,17 @@
 import random
 
+from brain_games.game import game
 
-RULES = 'What is the result of the expression?'
+
+_RULES = 'What is the result of the expression?'
 
 _MAX_QUESTION_NUMBER = 99
 _MAX_QUESTION_NUMBER_MULTIPLICATION = 10
 _ALLOWED_OPERATORS = ('+', '-', '*')
+
+
+def game_calc(user):
+    game(_RULES, question_expression, correct_answer, user)
 
 
 def question_expression():

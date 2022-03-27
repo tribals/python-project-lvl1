@@ -1,13 +1,9 @@
 from brain_games.cli import base_main
-from brain_games.games.progression import (
-    RULES,
-    question_progression,
-    correct_answer,
-)
+from brain_games.games.progression import game_progression
 
 
 def main():
-    base_main(RULES, question_progression, correct_answer)
+    base_main(game_progression)
 
 
 if __name__ == '__main__':

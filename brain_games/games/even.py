@@ -1,12 +1,18 @@
 from random import randint
 
+from brain_games.game import game
 
-RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 _MAX_QUESTION_NUMBER = 9999
 
 _ANSWER_YES = 'yes'
 _ANSWER_NO = 'no'
+
+
+def game_even(user):
+    game(_RULES, question_number, correct_answer, user)
 
 
 def question_number():

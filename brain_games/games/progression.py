@@ -1,11 +1,17 @@
 import random
 
+from brain_games.game import game
 
-RULES = 'What number is missing in the progression?'
+
+_RULES = 'What number is missing in the progression?'
 
 _PROGRESSION_MAX_START = 99
 _PROGRESSION_MAX_INCREMENT = 10
 _PROGRESSION_LENGTH = 10
+
+
+def game_progression(user):
+    game(_RULES, question_progression, correct_answer, user)
 
 
 def question_progression():

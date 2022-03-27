@@ -1,7 +1,9 @@
 from random import randint
 
+from brain_games.game import game
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 _MAX_QUESTION_NUMBER = 99
 
@@ -12,6 +14,10 @@ _PRIME_NUMBERS = (
     2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
     73, 79, 83, 89, 97,
 )
+
+
+def game_prime(user):
+    game(_RULES, question_number, correct_answer, user)
 
 
 def question_number():
